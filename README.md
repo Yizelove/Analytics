@@ -1,13 +1,12 @@
-# Han-Analytics
+# Analytics
 
-· Han-Analytics 是一个简单的网络分析跟踪器和仪表板，托管在被称为赛博菩萨的 Cloudflare 上,无成本稳定运行,每天可达10万次免费统计。
+· Analytics 是一个简单的网络分析跟踪器和仪表板，托管在被称为赛博菩萨的 Cloudflare 上,无成本稳定运行,每天可达10万次免费统计。
 
 · 域名、服务器、数据库 通通都不用! 托管在 Cloudflare Pages 上即可快速部署网站分析仪表板。
 
 ### 页面截图
 
-![Han-Analytics](https://i0.wp.com/uxiaohan.github.io/v2/2024/09/1727007937.webp)
-![Han-Analytics](https://i0.wp.com/uxiaohan.github.io/v2/2024/09/1726993735.webp)
+![Analytics](https://i0.wp.com/uxiaohan.github.io/v2/2024/09/1726993735.webp)
 
 ### 部署
 
@@ -23,7 +22,7 @@
 
 ```js
 // 在网站底部插入以下代码即可集成网站分析仪表板
-<script defer src="https://xxxxxx.pages.dev/tracker.min.js" data-website-id="自定义网站唯一标识"></script>
+<script defer src="https://analytics.vxo.im/tracker.min.js" data-website-id="自定义网站唯一标识"></script>
 ```
 
 ### 数据问题
@@ -32,7 +31,3 @@
 
 使用 Cloudflare Analytics Engine 数据集，它完全通过 HTTP 使用 Cloudflare 的 API 进行通信，数据完全来源于 Cloudflare Analaytics Engine 数据集中读取
 Cloudflare Analytics Engine 使用抽样技术，以可承受的规模化方式实现大量数据提取/查询（这类似于大多数其他分析工具，请参阅Google Analytics 上的抽样）。您可以在此处详细了解抽样技术如何与 CF AE 配合使用。
-
-### 使用说明
-
-https://www.vvhan.com/article/han-analytics.html
