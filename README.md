@@ -4,6 +4,13 @@
 
 · 域名、服务器、数据库 通通都不用! 托管在 Cloudflare Pages 上即可快速部署网站分析仪表板。
 
+### 集成使用
+
+```js
+// 在网站底部插入以下代码即可集成网站分析仪表板
+<script defer src="https://analytics.vxo.im/tracker.min.js" data-website-id="自定义网站唯一标识"></script>
+```
+
 ### 页面截图
 
 ![Han-Analytics](https://i0.wp.com/uxiaohan.github.io/v2/2024/09/1727007937.webp)
@@ -42,13 +49,6 @@ CLOUDFLARE_WEBSITE_WHITELIST =
 AnalyticsBinding
 # 数据集
 AnalyticsDataset
-```
-
-### 集成使用
-
-```js
-// 在网站底部插入以下代码即可集成网站分析仪表板
-<script defer src="https://xxxxxx.pages.dev/tracker.min.js" data-website-id="自定义网站唯一标识"></script>
 ```
 
 ### 数据问题
