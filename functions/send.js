@@ -13,7 +13,7 @@ export async function onRequest({ request, env }) {
     const parsedUserAgent = new UAParser(userAgent);
     const { browser, os } = parsedUserAgent.getResult();
     // Area
-    const area = request.cf ? request.cf.country : "-";
+    const area = request.cf ? (String(request.cf.country).trim() || "Unknown") : "Unknown";
     // Referrer
     let referrerUrl = "";
     try {
@@ -28,7 +28,7 @@ export async function onRequest({ request, env }) {
         blobs: [
           website, //website - blob1
           host, //Host - blob2
-          path, //path - blob3
+          path || '/', //path - blob3
           referrerUrl, //referrer - blob4
           os.name == 'android' ? 'Android' : (os.name || "Unknown"), //osName - blob5
           browser.name == "Chrome WebView" ? "Chrome" : (browser.name || "Unknown"), //browserName - blob6
